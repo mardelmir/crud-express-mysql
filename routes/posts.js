@@ -9,6 +9,7 @@ router.post("/", (req, res) => {
         if (err) throw err;
         console.log(result);
         res.send("Post added...");
+        //res.redirect('/')
     });
 });
 
@@ -33,6 +34,7 @@ router.put('/id/:id', (req, res) => {
     db.query(sql, (err, result) => {
         if (err) throw err;
         res.send('Post updated...')
+        //res.redirect('/')
     })
 })
 

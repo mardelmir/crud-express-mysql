@@ -2,7 +2,7 @@ const express = require("express")
 const app = express()
 const db = require('./config/database.js');
 require("dotenv").config()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 4000
 const posts = require("./routes/posts")
 
 app.use(express.json()) //parseamos el body sino es undefined
